@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wind Waker Particle Sandbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Trebuchet+MS:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="overlay">
+      <div class="row">
+        <span class="title">Wind Waker Sandbox</span>
+        <button id="clearBtn">Clear (C)</button>
+      </div>
+      <div class="row">
+        <label>Color:</label>
+        <div id="palette">
+          <button class="swatch active" style="background:#ffe66d" data-color="#ffe66d"></button>
+          <button class="swatch" style="background:#ffb3ba" data-color="#ffb3ba"></button>
+          <button class="swatch" style="background:#85e3ff" data-color="#85e3ff"></button>
+          <button class="swatch" style="background:#baffc9" data-color="#baffc9"></button>
+        </div>
+      </div>
+      <div class="row">
+        <label for="size">Size</label>
+        <input type="range" id="size" min="2" max="10" value="5" />
+        <label for="gravity">Gravity</label>
+        <input type="range" id="gravity" min="0" max="1" step="0.05" value="0.2" />
+      </div>
+      <div class="row"><small>Drag to draw particles</small></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
